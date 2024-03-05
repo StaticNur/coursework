@@ -29,7 +29,6 @@ public class VideoController extends HttpServlet {
 
         List<VideoData> data = videoService.getListOfVideoData(pageNumber, pageSize);
 
-        response.setContentType("application/json");
         objectMapper.writeValue(response.getWriter(), data);
     }
 }

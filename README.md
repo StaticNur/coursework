@@ -29,12 +29,35 @@ GET ``` http://localhost:8080/infinite-scroll?page=<Какая-Страница>
 
 Возвращает новую партию страничек.
 ``` 
-
+[
+    {
+        "fileName": "videoNum0",
+        "fileSizeFromByte": 1.0,
+        "videoBytes": "c3ty0tht53404jfd923jd2e0"
+    },
+    {
+        "fileName": "videoNum1",
+        "fileSizeFromByte": 2.0,
+        "videoBytes": "c3ty10101010tht534101010104jfd923jd2e10101010"
+    }
+]
 ``` 
 
-Если параметры будут отсутствовать вернет сообщение об ошибке:
+Возможные ошибки в запросе:
 ``` 
-
+{
+    "message": "Parameters must not be empty."
+}
+``` 
+``` 
+{
+    "message": "Parameters must be numbers."
+}
+``` 
+``` 
+{
+    "message": "Parameters must not be negative."
+}
 ``` 
 
 
